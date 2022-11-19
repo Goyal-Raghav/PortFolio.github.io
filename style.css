@@ -1,25 +1,29 @@
 h1 {
-    color: whitesmoke
+    color: whitesmoke;
+    margin-left:10px
 }
 
-* {
-   background-color: #808080; 
-}
 
 .header {
     background-color: cadetblue;
     display: flex;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .menu{
     margin-top: 30px;
+    margin-right: 10px;
+}
+.menu a{
+    margin-left: 10px;
 }
 
 .grid{
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
+    
 }
 
 .footer{
@@ -30,4 +34,29 @@ h1 {
 p, h2  {
     text-align: center;
 }
+a:link{
+    color:azure;
+}
+a:visited{
+    color:azure;
+}
+.item{
+    position:relative;
 
+}
+.item p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:0;
+}
+.item:hover p{
+    opacity:1;
+}
+.item:hover img{
+    opacity:0.2;
+}
+.grid img{
+    border-radius: 10px;
+}
